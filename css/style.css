@@ -1,182 +1,154 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Georgia, "Times New Roman", serif;
     background-color: #fcf8f8;
-    color: #333;
+    color: #222222;
+    padding: 20px;
 }
 
-header.topo {
-    padding: 20px 50px;
-    margin-bottom: 10px;
-
+header {
+    padding: 20px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: #cd28bd;
+.topo p {
+    color: rgb(205, 40, 189);
+    font-family: Arial;
+    font-size: small;
     font-weight: bold;
-    letter-spacing: 1.5px;
 }
 
-.logo h1 {
-    font-size: 30px;
-    color: #222;
-    margin-top: 5px;
+.topo h1 {
+    color: #222222;
+    font-size: 40px;
 }
 
 .menu {
     display: flex;
-    align-items: center;
+    gap: 20px;
 }
 
-.menu span {
-    margin-left: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #555;
-    cursor: pointer;
-}
-
-.menu span:hover {
-    color: #b33bad;
+header span {
+    font-family: Arial;
+    font-size: small;
+    color: #555555;
 }
 
 #destaque {
-    min-height: 400px;
-    padding: 60px 70px;
-
-    background-color: rgba(255, 192, 203, 0.942);
-
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    padding: 50px;
+    background-color: rgb(255, 192, 203);
     align-items: center;
-
-    gap: 50px;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 #destaque article {
-    max-width: 650px;
+    flex: 1;
 }
 
 .letras_pequenas {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
     color: #cd28bd;
-    font-weight: bold;
-    letter-spacing: 1.5px;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: Arial;
+}
+
+#destaque .letras_pequenas {
+    width: 250px;
 }
 
 #destaque h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 58px;
+    color: #222222;
+    font-size: 50px;
     font-weight: bold;
-    line-height: 0.98;
-    letter-spacing: -2.5px;
-    color: #111827;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-#destaque p:not(.letras_pequenas) {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 8px;
+#destaque p {
+    color: #555555;
+    font-family: Arial;
+    font-size: small;
+    line-height: 1.5;
 }
 
 #destaque img {
     width: 280px;
     height: 280px;
-    object-fit: cover;
     border-radius: 50%;
-    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.titulo_personagens {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.titulo_personagens .letras_pequenas {
+    width: 300px;
+}
+
+.titulo_personagens h2 {
+    color: #222222;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .personagens {
-    width: 90%;
-    max-width: 1200px;
-
-    margin: 0 auto;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    gap: 25px;
-
-    padding: 20px 0 50px;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
 }
 
 .card {
-    width: 30%;
-    min-width: 250px;
-
-    padding: 25px 20px;
-
-    background-color: white;
-
-    border: 1px solid #f0dddd;
+    background-color: #ffffff;
+    width: 22%;
+    padding: 15px;
     border-radius: 15px;
-
     text-align: center;
-
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .card img {
     width: 100%;
-    height: 190px;
-
+    height: 220px;
+    border-radius: 12px;
     object-fit: contain;
-
-    margin-bottom: 15px;
 }
 
 .card h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    color: #333333;
     font-size: 19px;
-    color: #333;
-    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .card p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    color: #666;
-    line-height: 1.5;
+    color: #666666;
+    font-family: Arial;
+    font-size: small;
+    margin-top: 10px;
 }
 
 footer {
+    background-color: rgb(255, 192, 203);
+    color: #3f2e3e;
     text-align: center;
-
-    padding: 30px 0;
-    margin-top: 30px;
-
-    background-color: #f4dedd;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    color: #cd28bd;
-}
-
-footer p {
-    margin-bottom: 5px;
+    padding: 30px;
+    margin-top: 40px;
 }
